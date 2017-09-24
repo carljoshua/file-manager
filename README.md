@@ -20,11 +20,11 @@ Note: Variables inside < > are required.
 |     URI       |   Method   | Additional Data |   Description   |
 | ------------- | ---------- | --------------- | ----------------|
 | /file/test.txt | GET | None | Read the test.txt inside root/ |
-| /file/test2.txt | POST | {path : "", content: <file contents>} | Creates test2.txt inside root/ |
-| /file/test2.txt | PUT | {path : "", content: <file contents>} | Change the contents of test2.txt |
+| /file/test2.txt | POST | {path : "", content: [file contents]} | Creates test2.txt inside root/ |
+| /file/test2.txt | PUT | {path : "", content: [file contents]} | Change the contents of test2.txt |
 | /file/test2.txt | DELETE | None | Deletes test2.txt |
 | /dir/newDir | POST | None | Creates new folder inside root/ |
-| /file/newDir/test3.txt | POST | {path : "", content: <file contents>} | Creates test3.txt inside root/newDir/ |
+| /file/newDir/test3.txt | POST | {path : "", content: [file contents]} | Creates test3.txt inside root/newDir/ |
 
 ## Contributors
 
