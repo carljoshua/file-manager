@@ -1,0 +1,133 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica";
+
+}
+@font-face {
+  font-family:"FuturaLight" ";
+  src: url("font/futura light bt.ttf");
+}
+.imgDiv{
+  padding: 10px;
+  padding-right: 10px;
+}
+h4{
+  color:white;
+  padding-top: 30px;
+}
+.nav-button{
+  color:white;
+  text-decoration: none;
+  padding: 20px;
+  padding-left:
+  font-family:;
+  font-weight: lighter;
+  width: 100%;
+  display: block;
+  font-family: "Helvetica";
+  -webkit-transition: background-color 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s;
+  -webkit-transition:   border-left: 0.5s; /* For Safari 3.1 to 6.0 */
+  transition:   border-left: 0.5s;
+}
+.nav-button:hover{
+  background-color: rgb(32, 32, 32);
+  color:white;
+  border-left: 3px solid rgb(0, 189, 249);
+  font-weight: bold;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 10px;
+}
+li{
+  list-style-type:;
+  margin-top: 5px;
+}
+
+.container{
+  background-color: rgb(209, 209, 209);
+  display: table;
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+}
+.title-bar{
+  color: rgb(163, 163, 163);
+  padding: 10px;
+  position:static;
+  width: 85%;
+  float:right;
+  background-color:rgb(51, 51, 51);
+  height: 20px;
+  text-align: center;
+  font-family:"Helvetica";
+  font-weight: bold;
+  -webkit-box-shadow: -4px 7px 26px -6px rgba(0,0,0,0.48);
+  -moz-box-shadow: -4px 7px 26px -6px rgba(0,0,0,0.48);
+  box-shadow: -4px 7px 26px -6px rgba(0,0,0,0.48);
+}
+.sideNav{
+  overflow: hidden;
+  padding-top: 10px;
+  width: 15%;
+  background-color: rgb(51, 51, 51);
+  height: 700px;
+  display: table;
+  position: absolute;
+}
+.main-pannel{
+  margin-left: 280px;
+  margin-top: 55px;
+  position: absolute;
+  width: 78%;
+  background-color: rgb(191, 191, 191);
+  border: 1px solid rgb(161, 161, 161);
+  height:95%;
+  padding:20px;
+}
+.elements{
+  width: 70%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+.file-con{
+  padding: 10px;
+  margin-bottom: 20px;
+  width:82%;
+
+}
+.text-con{
+  padding-top: 10px;
+  width: 95%;
+}
+.create-button{
+  width: 65px;
+  border: 1px ;
+  background-color:rgb(0, 189, 249);
+  padding:11px;
+  margin-left: 10px;
+  color:white;
+}
+.create-button:active{
+  background-color:rgb(0, 161, 190);
+  color: white;
+}
+.success-notif , .error-notif{
+  width: 90%;
+  padding:18px;
+  border-radius:5px;
+  margin: 5px;
+}
+.success-notif{
+  background-color: rgb(125, 255, 126);
+  color: rgb(0, 107, 52);
+}
+.error-notif{
+  background-color: rgb(255, 106, 119);
+  color: rgb(107, 0, 22);
+}

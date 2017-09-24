@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      File Managing System
+    </title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="main-pannel">
+      <div class="elements">
+        <h1>Create Directory</h1>
+        <input type="text" placeholder="path here..." class="file-con" id="path"><input type="button" value="Create" class="create-button" onclick="createDir()"><br>
+       <div id="s" class="success-notif" hidden>
+          Success...
+       </div>
+       <div id="e" class="error-notif" hidden>
+          Error...
+       </div>
+      </div>
+    </div>
+      <div class="container">
+          <div class="title-bar">
+              Home Page
+          </div>
+        <div class="sideNav">
+          <div class="imgDiv">
+            <a href="index.html"><img src="image/Lgo.png" class="logo" width="250px" height="80px"></a>
+              <h4>Manage Files</h4>
+                <hr>
+          <div>
+        <ul>
+            <li><a href="create-file.html" class="nav-button">Create File </a></li>
+            <li><a href="create-directory.html" class="nav-button">Create Directory </a></li>
+            <li><a href="update.html" class="nav-button">Update</a></li>
+            <li><a href="delete.html" class="nav-button">Delete</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <script src="js/ajax.js"></script>
+     <script>
+        function createDir(){
+            var ajax = ajaxObj("POST", "http://localhost:8000/dir/" + _("path").value);
+            ajax.onreadystatechange = function(){
+        		data = JSON.parse(ajax.responseText)
+                if(data.message == "Directory created successfully"){
+                    _("s").removeAttribute("hidden")
+                }else{
+                    _("e").removeAttribute("hidden")
+                }
+            }
+            ajax.send(JSON.stringify({"Path": _("path").value, "Content" : ""}));
+        }
+     </script>
+  </body>
+</html>
