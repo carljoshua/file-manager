@@ -15,7 +15,7 @@ Created files are stored inside the root/ folder.
 The API have basic functions: Create, Read, Update, Delete, Copy and Move. Below are the description of what the URI and certain HTTP method do.
 
 Note: This API is served in localhost:8000. Concatenate http://localhost:8000 into the URIs below
-Note: Variables inside < > are required.
+Note: Variables inside [ ] are required.
 
 |     URI       |   Method   | Additional Data |   Description   |
 | ------------- | ---------- | --------------- | ----------------|
